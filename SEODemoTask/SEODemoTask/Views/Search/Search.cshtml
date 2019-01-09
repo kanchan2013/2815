@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Search";
+}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script type="text/javascript" src="~/Scripts/SearchJS/SearchTitle.js"></script>
+</head>
+<body>
+    <div class="center">
+        <h2>Search</h2>
+        <div id="divSearch" class="divSearch">
+            <div>
+                <input id="searchTitle"
+                       name="searchTitle"
+                       type="search" placeholder="Search" onkeyup="showMatchingItems();"
+                       class="searchBox" />
+            </div>
+            <div id="divNoMatch">
+                <span class="noMatch">Your search did not match any document.</span>
+            </div>
+            <div id="searchResults">
+                @Html.ListBox("lstSearch", new SelectList(new[] { "" }),
+                new { @class = "searchList" })
+            </div>
+            <div id="description" class="divHistoryDesc">
+                <table style="width:100%">
+                    <tr>
+                        <td class="searchHistory">Search History</td>
+                        <td class="clearHistory">
+                            <a href="javascript: void (0);" onclick="clearSearchList();" style="color: black;"> Clear search history</a>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table id="searchHistory" style="width:100%; border-collapse: collapse;"></table>
+            </div>
+        </div>
+        <div style="padding-top:15px;padding-right:15px;">
+            <input type="button" value="Delete" class="deleteBtn" onclick="clearSearchList();" title="It will delete all the search history." />
+        </div>
+    </div>
+</body>
+</html>
+
+   
+
+
+
+

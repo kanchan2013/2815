@@ -1,0 +1,119 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.deleteBtn {
+    background-image: url('Images/DeleteBtnImg.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 205px;
+    height: 104px;
+    border: none;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.noMatch {
+    font-size: 20px;
+    display:none;
+}
+.divNoMatch {
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+option::first-letter {
+    font-weight: bold;
+}
+option:first-letter {
+    font-weight: bold;
+}
+.historyDate {
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #909296;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 14px;
+}
+.padding10TopBottom {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.closeButton {
+    color: #909296;
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+}
+.borderBottom {
+    border-bottom: 2px solid lightgray;
+}
+.borderTop {
+    border-top: 2px solid lightgray;
+}
+.fontArial16Bold {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 16px;
+}
+.searchList {
+    width: 650px;
+    margin-top: 4px;
+    display: none;
+    font-size: 18px;
+    padding: 15px;
+    line-height: 400%;
+    border: 2px solid lightgray;
+}
+.searchHistory {
+    text-align: left;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+}
+.clearHistory {
+    text-align: right !important;
+    font-family: Arial;
+    font-size: 12px;
+    padding-right: 10px;
+}
+.searchBox {
+    width: 650px;
+    height: 60px;
+    font-family: Verdana;
+    font-size: 18px;
+    padding-left: 15px;
+    border: 2px solid lightgray;
+}
+.divHistoryDesc {
+    padding-top: 25px;
+    margin-bottom: 25px;
+    padding-left: 15px;
+}
+.divSearch {
+    background-color: #edf0f4;
+    width: 652px;
+    padding: 6px;
+}
+.listItem {
+    line-height: 50px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.center {
+    margin: 0 auto;
+    display: block;
+    width: 652px;
+}
+
