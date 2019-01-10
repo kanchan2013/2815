@@ -68,7 +68,6 @@ function clearSearchList() {
     sessionStorage.clear();
     $("#searchHistory").find('tbody').detach();
     $("#divNoHistory").show();
-    $(".deleteBtn").title("There is no search history to delete");
 }
 /*This function will display a list of items matching to the input */
 function showMatchingItems() {
