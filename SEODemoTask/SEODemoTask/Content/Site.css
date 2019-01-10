@@ -23,12 +23,19 @@
 }
 .noMatch {
     font-size: 20px;
+    font-family: Arial;
     display:none;
 }
 .divNoMatch {
     padding-top:20px;
     padding-bottom: 20px;
     padding-left: 15px;
+}
+.noHistory{
+  padding-left: 20px;
+  padding-bottom: 30px;
+  font-family:Arial;
+  font-size:20px;
 }
 option::first-letter {
     font-weight: bold;

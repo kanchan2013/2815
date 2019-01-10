@@ -1,13 +1,19 @@
 ﻿$(document).ready(function () {
     var a = sessionStorage.length;
-    if (sessionStorage.length > 0) { displayUserSearchHistory(); }
+    if (sessionStorage.length > 0) {
+        displayUserSearchHistory();
+        $("#divNoHistory").hide();
+    } else {
+        $("#divNoHistory").show();
+    }
     $('#lstSearch').change(function () {
         $("#searchTitle").val($("#lstSearch option:selected").text());
         $('#lstSearch').hide();
         var todaysDate = dateFormate();
         sessionStorage.setItem($("#searchTitle").val(), todaysDate);
-        if (sessionStorage.length > 1) {
+        if (sessionStorage.length > 0) {
             $("#searchHistory").find('tbody').detach();
+            $("#divNoHistory").hide();
         }
         displayUserSearchHistory();
     }
@@ -61,6 +67,8 @@ function removeSearchItem(searchItem) {
 function clearSearchList() {
     sessionStorage.clear();
     $("#searchHistory").find('tbody').detach();
+    $("#divNoHistory").show();
+    $(".deleteBtn").title("There is no search history to delete");
 }
 /*This function will display a list of items matching to the input */
 function showMatchingItems() {
